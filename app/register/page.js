@@ -1,6 +1,6 @@
 "use client";
 import {useState} from "react";
-import {toast, Toaster} from "react-hot-toast";
+import {Toaster, toast} from "react-hot-toast";
 import {useRouter} from "next/navigation";
 
 export default function Register() {
@@ -13,7 +13,6 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       setLoading(true);
       const response = await fetch(`${process.env.API}/register`, {
@@ -32,8 +31,6 @@ export default function Register() {
       }
 
       const data = await response.json();
-    //   console.log(data);
-
       toast.success(data.success);
       setLoading(false);
       router.push("/login");
