@@ -4,5 +4,7 @@ const dbConnect = async () => {
     return;
   }
   mongoose.connect(process.env.DB_URI);
+  console.log("db conected Successfully");
+  
 };
 export default dbConnect;
