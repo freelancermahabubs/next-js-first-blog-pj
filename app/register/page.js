@@ -13,6 +13,7 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
       setLoading(true);
       const response = await fetch(`${process.env.API}/register`, {
