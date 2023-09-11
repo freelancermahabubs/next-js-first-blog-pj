@@ -57,7 +57,7 @@ export default function AdminBlogCreate() {
         });
   
         if (response.ok) {
-          router.push("/dashboard/admin");
+          router.replace("/dashboard/admin");
           toast.success("Blog created successfully");
         } else {
           const errorData = await response.json();

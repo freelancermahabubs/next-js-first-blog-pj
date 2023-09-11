@@ -27,7 +27,7 @@ export default function Login() {
       } else {
         toast.success("Login successful");
 
-        router.push("/callbackUrl");
+        router.replace(callbackUrl);
       }
     } catch (err) {
       console.log(err);
