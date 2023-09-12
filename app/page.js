@@ -45,7 +45,7 @@ export default async function Home({ searchParams }) {
       {/* { <pre>{JSON.stringify(data, null, 4)}</pre> } */}
       <BlogList blogs={blogs} />
 
-      {/* <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center">
         <nav aria-label="Page navigation">
           <ul className="pagination">
             {hasPreviousPage && (
@@ -87,7 +87,7 @@ export default async function Home({ searchParams }) {
             )}
           </ul>
         </nav>
-      </div> */}
+      </div>
     </div>
   );
 }

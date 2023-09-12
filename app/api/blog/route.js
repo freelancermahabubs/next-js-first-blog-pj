@@ -8,7 +8,7 @@ export async function GET(req) {
   const searchParams = queryString.parseUrl(req.url).query; //?page=2
   console.log("searchparams", searchParams);
   const {page} = searchParams || {};
-  const pageSize = 2;
+  const pageSize = 6;
   try {
     // current page
     const currentPage = Number(page) || 1;
