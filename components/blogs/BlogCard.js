@@ -14,7 +14,7 @@ export default function BlogCard({ blog }) {
       </div>
       <div className="card-body">
         <h5 className="card-title">
-          <Link href="">{blog.title}</Link>
+          <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
         </h5>
      
      
